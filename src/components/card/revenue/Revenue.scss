@@ -1,0 +1,58 @@
+.revenue{
+    padding:0.7rem;
+    flex: 1.5;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    color:grey;
+
+    .revenue-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon{
+            cursor: pointer;
+            color:rgb(77, 75, 75)
+        }
+    }
+    .revenue-center{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+        .revenue-cirular-bar{
+            height:15vh;
+        }
+        .counter{
+            color:black;
+            font-size:30px;
+        }
+        .revenue-center-text{
+            font-size:small;
+        }
+    }
+    .revenue-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:0.5rem;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+
+            &.positive{
+                color:green;
+            }
+            &.negative{
+                color:red;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.home {
+  display: flex;
+  .home-container {
+    flex: 6;
+    .center-top {
+      padding: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+    .center {
+      padding: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    .home-container {
+      .center-top {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
